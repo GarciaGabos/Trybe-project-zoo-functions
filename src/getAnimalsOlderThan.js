@@ -5,7 +5,8 @@ const { species } = data;
 function getAnimalsOlderThan(animal, age) {
   const wantedAnimals = species.find((specie) => specie.name === animal);
   // eslint-disable-next-line max-len
-  const wantedAge = wantedAnimals.residents.every((individualAnimal) => individualAnimal.age >= age);
+  const wantedAge = wantedAnimals.residents.every((individualAnimal) =>
+    individualAnimal.age >= age);
   return wantedAge;
 }
 
