@@ -49,4 +49,10 @@ describe('Testes da função HandlerElephants', () => {
     const expected = 'Parâmetro inválido, é necessário uma string';
     expect(actual).toEqual(expected);
   });
+
+  test('passando uma parametro de string qualquer retorna null', () => {
+    const actual = handlerElephants('procurandoDefault');
+    const expected = null;
+    expect(actual).toEqual(expected);
+  });
 });
